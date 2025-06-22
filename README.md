@@ -7,7 +7,7 @@ Simples scripts Perl para gerar códigos TOTP (Google Authenticator) a partir de
 - `obterOTP2.pl`: Gera, exibe e copia para o clipboard
 - Ambos geram logs chamado "otp_log.txt".
 
-# Necessário:
+# Necessário
 Authen::OATH
 MIME::Base32
 Win32::Clipboard
@@ -17,4 +17,5 @@ Depois de ter instalado Authen::OATH, MIME::Base32 e Win32::Clipboard, você pod
 ``` perl obterOTP.perl contaX ```
 ou
 ``` perl obterOTP2.perl contaX ```
+
 X = número da conta, neste código vai até o 10, mas pode adicionar quantos quiser.
