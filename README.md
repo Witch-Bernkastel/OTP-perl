@@ -1,6 +1,15 @@
 # OTP-perl
 Simples scripts Perl para gerar códigos TOTP (Google Authenticator) a partir de chaves Base32.
 
+
+Obs.: Esses códigos não convertem diretamente do formato "otpauth-migration://offline?data=...". Para extrair chaves de links de migração do Google Authenticator, você precisará:  
+
+1. Usar ferramentas específicas, como por exemplo:  
+   - [extract_otp_secrets](https://github.com/scito/extract_otp_secrets) (Python)  
+   - Decodificar manualmente o parâmetro `data=` (Base64 + Protocol Buffers)  
+
+2. **Somente então** inserir a chave Base32 resultante em `%secrets` destes scripts.
+
 # Funcionalidades
 
 - `obterOTP.pl`: Gera e exibe o código
